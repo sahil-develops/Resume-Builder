@@ -1,0 +1,408 @@
+body{
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+/* Switch CSS*/
+
+/* Switch CSS ends*/
+
+.input-fields{
+  margin: 2px auto;
+  max-width: 100vw;
+  padding: 1rem;
+  
+}
+
+.input-fields input,textarea{
+  width: 100%;
+  height: 40px;
+  margin: 2px;
+}
+
+input:focus,textarea:focus {
+  outline: none;
+  border:2px solid rgb(68, 218, 255);
+
+}
+
+.hero{
+  background-color: #EE6A59;
+  text-align: center;
+  padding: 10px;
+  color:white;
+}
+
+.main{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color:#3A3F58 ;
+  color: white;
+}
+
+.main h2{
+  border-bottom: 2px solid rgb(7, 7, 7);
+  width: max-content;
+  color:white
+}
+
+
+
+.card-body {
+  padding: 1rem 1rem;
+}
+
+
+/*ANOTHER DESIGN */* {
+  box-sizing: border-box
+}
+
+.output2 {
+  background: url(//css-tricks.com/examples/OnePageResume/images/noise.jpg)
+}
+
+
+
+div#resume {
+  min-width: 310px;
+  font: 16px Helvetica, Avernir, sans-serif;
+  line-height: 24px;
+  color: #000;
+  padding: 1rem;
+}
+
+div#resume h1 {
+  margin: 0 0 16px 0;
+  padding: 0 0 16px 0;
+  font-size: 42px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  border-bottom: 1px solid #999;
+  line-height: 50px
+}
+
+div#resume h2 {
+  font-size: 20px;
+  margin: 0 0 6px 0;
+  position: relative
+}
+
+div#resume h2 span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-style: italic;
+  font-family: Georgia, serif;
+  font-size: 16px;
+  color: #999;
+  font-weight: normal
+}
+
+div#resume p {
+  margin: 0 0 16px 0
+}
+
+div#resume a {
+  color: #999;
+  text-decoration: none;
+  border-bottom: 1px dotted #999
+}
+
+div#resume a:hover {
+  border-bottom-style: solid;
+  color: #000
+}
+
+div#resume p.objective {
+  font-family: Georgia, serif;
+  font-style: italic;
+  color: #666
+}
+
+div#resume dt {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: right;
+  padding: 0 26px 0 0;
+  width: 150px;
+  border-right: 1px solid #999
+}
+
+div#resume dl {
+  display: table-row
+}
+
+div#resume dl dt,
+div#resume dl dd {
+  display: table-cell;
+  padding-bottom: 20px
+}
+
+div#resume dl dd {
+  width: 500px;
+  padding-left: 26px
+}
+
+
+
+@media screen and (max-width:1100px) {
+  div#resume h2 span {
+    position: static;
+    display: block;
+    margin-top: 2px
+  }
+.main , .main2 {
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+
+}
+
+@media screen and (max-width:550px) {
+  body {
+    margin: 1rem
+  }
+  div#resume img {
+    transform: rotate(0deg)
+  }
+ 
+}
+
+@media screen and (max-width:400px) {
+  div#resume dl dt {
+    border-right: none;
+    border-bottom: 1px solid #999
+  }
+  div#resume dl,
+  div#resume dl dd,
+  div#resume dl dt {
+    display: block;
+    padding-left: 0;
+    margin-left: 0;
+    padding-bottom: 0;
+    text-align: left;
+    width: 100%
+  }
+  div#resume dl dd {
+    margin-top: 6px
+  }
+  div#resume h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px
+  }
+  div#resume dt {
+    font-size: 20px
+  }
+  h1 {
+    font-size: 36px;
+    margin-right: 0;
+    line-height: 0
+  }
+  div#resume img {
+    margin: 0
+  }
+
+ 
+}
+
+@media screen and (max-width:320px) {
+  body {
+    margin: 0
+  }
+  img {
+    margin: 0;
+    margin-bottom: -40px
+  }
+  div#resume {
+    width: 320px;
+    padding: 12px;
+    overflow: hidden
+  }
+  p,
+  li {
+    margin-right: 20px
+  }
+ 
+}
+
+
+/*Design 3 CSS starts*/
+
+#container{
+  position: relative;
+  display: block;
+}
+#profile{
+  flex: 15%;
+  display: block;
+  position: relative;
+  margin: 5% ;
+  height: 100%;
+  width: 90% 
+}
+#info-cards{
+  flex: 55%;
+  display: block;
+  margin-top: 5%;
+  margin-top: -3%;
+  width: 100%;
+  height: 100%;
+}
+#image{
+  position: relative;
+  overflow: hidden;
+}
+#image,#profile-photo{
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+}
+#image > a{
+  position: absolute;
+  top:0;
+  left:0;
+  background: rgba(0,0,0,0.5) !important;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+#image > a > i{
+  -webkit-text-stroke: 1px #ffffffdd;
+  padding: 40%;
+}
+#image:hover a{
+  display: block;
+}
+#name{
+  font-size: 23px !important;
+  line-height: 20px !important;
+}
+#about,.card > ul > li{
+  padding: 0 0 0 15px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  
+}
+#about{
+  font-size: 20px !important;
+  padding: 0 !important;
+}
+#name, #about > p{
+  font-weight: bolder;
+  font-family: 'Open Sans', sans-serif;
+}
+#email,#fax,#Address{
+  font-size: 15px !important;
+  font-weight: bold !important;
+  font-family: 'Cutive Mono',monospace;
+}
+#college,#year-graduation,#Address,#more-about,#Titlee,#fax{
+  color: #555;
+  font-size: 13.5px;
+}
+strong,span{
+  color: black;
+  font-size: 16px;
+}
+#social-links,#about{
+  display: inline-block;
+}
+#social-links{
+  margin-bottom: 12px;
+}
+#social-links a{
+  margin: 0 10px;
+}
+#edit-intro{
+  display: block;
+  color:#097bbf;
+  font-family: 'Nunito', sans-serif;
+}
+.fab{
+  font-size: 1.1em;
+}
+.fab,.fas{
+  color: whitesmoke;
+}
+#about > a{
+  top: 4px;
+  right: 8px;
+}
+.edit{
+  top: 19px;
+  right: 10px;
+}
+#about > a, .edit{
+  position: absolute;
+  font-size: 15px !important;
+}
+.stroke-transparent {
+-webkit-text-stroke: 1px #000;
+-webkit-text-fill-color: transparent;
+}
+.blue{
+  color: #097bbf !important;
+  font-size: 13px;
+}
+.stroke-transparent-blue {
+-webkit-text-stroke: 1px #097bbf;
+-webkit-text-fill-color: transparent;
+}
+.card{
+  border:0px;
+  overflow-x: hidden;
+  padding: 15px 30px 30px 30px;
+  background-color: #fff;
+  margin: 0 5%;
+  margin-bottom: 3px;
+  
+}
+.card > p{
+  color: #0e141e;
+  font-weight: bolder;
+  font-size: 18px;
+  line-height: 1;
+}
+/* .card > p > i{
+  font-size: 18px;
+} */
+.card > a{
+  font-weight: 400;
+  font-size: 15px;
+  margin: 0;
+  margin-left: 25px;
+  padding: 0;
+  border: 0;
+  height: auto;
+  background: transparent;
+  color: #097bbf;
+  outline: none;
+  cursor: pointer;
+}
+.card > ul{
+  list-style-type: none;
+}
+.tags{
+  font-size: 17px;
+  font-weight: bolder;
+}
+.tags ~ a{
+  display: none !important;
+}
+.tags span{
+  font-size: 14px;
+  font-weight: normal;
+  color: #0e141e;
+}
+.tags span span{
+  color: #738f93;
+}
+
+/*Design 3 CSS ends */
